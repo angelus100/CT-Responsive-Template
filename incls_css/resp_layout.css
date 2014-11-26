@@ -1,0 +1,62 @@
+﻿/* -------------------------------------------------------------- Overall layout ------------------------------------------------------------------------ */
+body {margin:0px 0px 0px 0px; padding:0px 0px 0px 0px; margin-top:0px;}
+img {border:0px;}
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------ */
+ 
+/* ---------------------------------------------------------------- div layout -------------------------------------------------------------------------- */
+#headerWrapper {width:100%; height:84px; background-color:#387497; margin-top:0px;}
+#headerGoNavigation {width:800px; margin:0px auto 0px auto; background-color:#387497;}
+#navigation {width:100%; height:20px; margin:0px 0px 12px 0px; line-height:20px; background-color:#66ADBF;}
+#navigation #top_nav_menu {width:800px; margin:0px auto 0px auto; text-align:center; background-color:#66ADBF;}
+#mainContent {width:800px; height:auto; margin:0px auto 0px auto;}
+#mainDemo {width:800px; height:auto; margin:0px auto 0px auto;}
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------ */
+
+/* -------------------------------------------------------------- Content layout ------------------------------------------------------------------------ */
+/* -- General Use -- */
+div, #headerGoNavigation form input {font-family:Arial, Helvetica, sans-serif; font-size:11px; font-weight:bold;}
+
+/* -- headerGoNavigation -- */
+#headerGoNavigation form input {border:0px;}
+#headerGoNavigation .citytechLogo {position:relative; width:277px; height:84px; float:left; padding:0px 28px 0px 0px;}
+#headerGoNavigation ul {width:60%; /*width:150px; */float:right; margin:0px 0px 0px 0px; padding:0px 15px 0px 0px; list-style-type:none; display:block;  background-color:#387497;}
+#headerGoNavigation li {display:inline;}
+#headerGoNavigation li, #headerGoNavigation form input {color:#000;}/*FF7E00 387497*/
+#headerGoNavigation a {font-size:13px; color:#FFFFFF; text-decoration: none;}
+#headerGoNavigation .marginTopAndBottom15 {margin:15px 0px 15px 0px;}
+/*---new code for whitebox names to be clickable---*/
+#headerGoNavigation .whiteBox { width:27%;/*width:130px;*/ height:20px; padding:0px 5px 0px 0px; float:left; background-color:#FFFFFF; text-indent:5px;}
+#headerGoNavigation .whiteBox a {width:130px; height:17px; padding:3px 0px 0px 0px; float:left; background-color:#FFFFFF;text-align:left; background-image:none;color:#387497;font-size:11px; font-weight:bold;line-height:normal;}
+#headerGoNavigation .whiteBox a:hover {color:#FF7E00;}
+/*---END new code for whitebox names to be clickable---*/
+#headerGoNavigation ul a{width:20px; height:20px; float:left; text-align:center; line-height:20px;                background-image:url('/images/header_go_navigation/buttonblock.jpg');}
+#headerGoNavigation form a {width:47px; height:20px; float:left; text-align:center; line-height:20px;                background-image:url('/images/header_go_navigation/buttonblock.jpg');  background-repeat:repeat-x;}
+#headerGoNavigation ul a:hover, #headerGoNavigation form a:hover {background-position: 0px -20px;}
+/*#headerGoNavigation form a, #headerGoNavigation form input {margin:15px 0px 0px 0px;}*/
+#headerGoNavigation form input {width:93px; height:17px; padding:1px 5px 2px 5px; float:left;  font-weight:normal; }
+
+/* -- navigation -- */
+#navigation ul {margin:0px 0px 0px 0px; padding:0px 0px 0px 0px; list-style-type:none; display:block;}
+#navigation li {display:inline;}
+#navigation a {color:#FFFFFF; text-decoration:none; padding:3px 17px 3px 16px;}
+#navigation a:hover {background-color:#FF7E00;}
+#navigation .youAreHere a {background-color:#84C51A;}
+
+/* --------------------------------------------------------------------------------------------------------- */
+
+
+/*TODO- working on this new nav top area which would help in responsive view- Fix backGrou image on this below*/
+#headerGoNavigation .whiteBoxResp a { display:block; width:130px; height:17px; padding:4px 20px 0px 0px; float:left; background-color:#FFFFFF;text-align:left; background-image:url('/images/header_go_navigation/buttonblock.jpg');  background-repeat:none; background-position:right center; bac color:#387497;font-size:11px; font-weight:bold;line-height:normal; text-indent:5px;}
+
+@media only screen and (max-width: 805px) {
+  #headerWrapper  { width:100%; height:auto;}
+  #headerGoNavigation {width:100%; margin:0px auto 0px auto; background-color:#387497;}
+  #headerGoNavigation ul {width:46%; float:left; margin:0px auto; padding:0px 15px 0px 0px; list-style-type:none; display:block;  background-color:#387497;}
+  
+  #navigation, #navigation #top_nav_menu { height:auto; width:100%;}
+  #navigation ul { background-color:#66ADBF; clear:left; }
+  #navigation li {display:block; /*width:50%; float:left;*/ text-transform:uppercase; background-color:#66ADBF; border-bottom:1px solid #387497;}
+  #navigation li a {display:block; padding:5px 0; font-size:14px;}
+  /*#navigation li:nth-last-child(1) { width:100%;  }*/
+  
+}

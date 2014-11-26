@@ -1,0 +1,130 @@
+
+/* STYLESHEET FOR CITY TECH - DEPARTMENT SECOND LEVEL PAGES*/
+/* LINKS */
+a:link{color:#fff; font-family: Arial, Helvetica, sans-serif; text-decoration: none;}
+a:visited{color:#fff; text-decoration: none; outline:none;}
+a:hover{text-decoration: none;}
+a:active{outline:none;}
+/* END */
+html { overflow-y:scroll; }
+body{ background-color: #E4E4E4;  	 }
+
+#container_all{
+	width: 800px;
+	margin-top: 0px;
+	margin-right: auto;
+	margin-left: auto;
+	margin-bottom: 0px;
+}
+
+.mainTitleBar{
+	padding-bottom: 1px;
+	width:800px;
+	height:43px;
+}
+ 
+/* MENU */
+#menu{
+background-color: #678991;
+line-height: 20px;
+list-style-type: none;
+margin: 0px;
+padding: 0px;
+}
+#menu li{
+color: #FFFFFF;
+display: inline;
+font-family: Arial, Helvetica, sans-serif;
+font-size: 11px;
+font-style: normal;
+font-weight: bold;
+margin: 0px;
+padding: 0px;
+}
+#menu li a { padding:3px 12px 3px 12px;}
+#menu li a:hover{
+background-color: #30555e;
+text-decoration: none;
+}
+
+#menu .menuCurrent {
+background-color: #30555e;
+color:#fff;
+}
+/* END */
+
+/* SUB MENU */
+.topLink{padding-top: 13px;}
+.bottomLink{padding-bottom: 18px;}
+ 
+.subMenuImage ul{
+	float: left;
+	height: 110px;
+}
+.subMenuImage ul#aca_research{
+	float: left;
+	height: 102px;
+}
+.subMenuImage .depts {
+	float: left;
+	height: 160px;
+}
+
+
+.subMenuImage ul li a{
+	color: #30555e;
+}
+
+/* DEPARTMENTS "CURRENT PAGE" STATE */
+.subMenuImage .subCurrent{
+color:#fff;
+}
+/* END */
+
+.subMenuImage a:hover{color: #fff; text-decoration: none;}
+
+.subMenuImage li{
+	background-color: #678991;
+	color: #30555e;
+	list-style: none;
+	padding-left: 15px;
+	padding-top: 10px;
+	width:145px;
+}
+
+.subMenuImage ul{
+	background-color: #678991;
+	font-size: 10px;
+	font-weight: bold;
+	margin: 52px 0px 0px;
+	padding: 8px 0px 2px;
+	line-height: 13px;
+}
+
+/* MAIN IMAGES FOR BACKGROUND */
+.subMenuImage{
+	background-position: 0px 0px;	height:240px;	width: 800px; background-color:#999;  }
+
+#mainImageAcademicOpportunities{
+	background-color: #125;
+}
+#mainImageHome{		}
+#mainImageProvost{	background-image:url('../images/augustbio.jpg');	}
+#mainImageCatalogArchive{	background-image:url('../images/catalogbannerA3.jpg');	}
+#mainImageSchools{		}
+#mainImageContEd{	background-image:url('../images/acabanner.jpg');	}
+#mainImageResearch{ 	}
+#mainImageOpp{		}
+#mainImageEvents{	}
+
+/*#mainImageSample{
+background-image: url(images/banner/africanstudy1.png);  example of another bg image 
+}*/
+/* MAIN IMAGES FOR BACKGROUND END */
+                       
+/* FOOTER  NEEDED IN CASE YOU NEED TO CHANGE BAR COLOR AND ROLLOVER COLOR */
+#footer {background-color:#5D9EAF !important; }  /* <--- needed to override orange from layout css  */
+#footer a:hover {background-color:#50757e;}
+#footerSpacing {
+	 height:0px;
+	 clear:both; }

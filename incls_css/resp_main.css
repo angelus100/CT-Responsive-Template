@@ -1,0 +1,53 @@
+﻿body {font: 12px/14px Arial,Helvetica,sans-serif;	 }
+
+/* -------------------------- header layout --------------------------------- */
+#headerWrap {width:100%;  background-color:#387497;}
+#headerGo {  width:800px;height:84px; margin:0px auto;}
+	#Gos { display:block; width:495px; float:right; font-weight:bold; font-size:0.927em;}
+	#Gos a { display:block; height:17px; width:145px; background:#fff url('/images/header_go_navigation/buttonblockGo.gif') no-repeat right top; background-attachment: scroll; color:#387497; float:left; margin: 15px 15px 0 0; padding:3px 0 0 5px;}
+	#Gos a:hover, #Gos a#searchB:hover { color:#ff7e00; background-position: right bottom; }
+	#Gos input { width:92px; border:0 none; margin:15px 0 0; padding:1px 5px 2px; height:17px;float:left;}
+	#Gos a#searchB { width:47px; padding:3px 0 0 1px; font-size:1.182em; color:#fff; background:url('/images/header_go_navigation/buttonblock.jpg') repeat-x; }
+	#Gos a#searchB:hover { color:#fff; background-position: right bottom; }
+	#Gos .margLess { margin-right:5px;}
+	#GosMobi, #mainNavMobi { display:none; }
+.citytechLogo {position:relative; display:block; width:277px; height:84px; float:left; }
+
+#mainNavigation {width:100%; height:auto; margin:0 0 25px; line-height:19px; text-align:center; background-color:#66ADBF;}
+	#mainNavigation ul {margin:0px auto; width:100%; padding:0px 0px 0px 0px; list-style-type:none; display:block;}
+	#mainNavigation li {display:inline; margin:0;}
+	#mainNavigation a { color:#FFFFFF; font-weight:bold; font-size:0.927em; text-decoration:none; margin:0; padding:3px 17px 3px 16px;}
+	#mainNavigation a:hover { background-color:#FF7E00; }
+	  #page1 { display:none;}
+/* ----------------------------------------------------------------------------------------------------------------- */
+
+/* ------------------------------- Content layout ------------------------------------- */
+/* -- General Use --
+div, #headerGoNavigation form input {font-family:Arial, Helvetica, sans-serif; font-size:11px; font-weight:bold;}
+ */
+/* -- headerGoNavigation -- */
+
+/* ----------------------------------------------------------------------------------------------------------------- */
+
+
+@media only screen and (max-width: 815px) {
+  #headerWrap  { width:100%; height:auto;}
+  .citytechLogo { float:none; margin:0 auto; }
+  #headerGo {width:100%; height:100%; margin:0px auto 0px auto; background-color:#387497;}
+  #headerGo ul {width:46%; float:left; margin:0px auto; padding:0px 15px 0px 0px; list-style-type:none; display:block;  background-color:#387497;}
+  #Gos { display:none;}
+  /*#Gos { float:none;margin:0 auto; width:330px; padding-bottom:10px;}
+  #Gos .margLess { margin-right:15px;}
+  #Gos:after { content:"."; color:#387497;  }*/
+  #GosMobi, #mainNavMobi { display:block; width:100%;background-color:#66ADBF; padding:6px 0; border-bottom:1px solid #ccc;}
+  #GosMobi form, #mainNavMobi form { margin:5px auto; width:235px; padding-right:20px;}
+  #GosMobi form select, #mainNavMobi form select { width:100%; }
+  
+  #mainNavigation { display:none;}
+  /*#mainNavigation, #mainNavigation #top_nav_menu { height:auto; width:100%;}
+  #mainNavigation ul { background-color:#66ADBF; clear:left; }
+  #mainNavigation li {display:block; text-transform:uppercase; background-color:#66ADBF; border-top:1px solid #387497;}
+  #mainNavigation li a {display:block; padding:5px 0; font-size:14px;}*/
+  /*#navigation li:nth-last-child(1) { width:100%;  }*/
+  #page1 { display:block;}
+}
